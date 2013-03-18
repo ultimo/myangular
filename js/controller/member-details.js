@@ -21,7 +21,6 @@ function MemberDetailsCtrl($scope, $routeParams, Members) {
         //make member available in frontend
         $scope.member = member;
     });
-    console.log($routeParams);
     $scope.getClass = function(id) {
         return $routeParams.friendId == id ? 'selected' : '';
     };
@@ -30,7 +29,6 @@ function MemberDetailsCtrl($scope, $routeParams, Members) {
 MemberDetailsCtrl.prototype = {
 
     getClass: function(id) {
-        console.log(arguments);
         return $routeParams.path == id ? 'selected' : '';
     },
 
