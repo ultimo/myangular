@@ -1,0 +1,10 @@
+<ul class="unstyled" ng-controller="MembersListCtrl">
+    <li class="clearfix {{getClass(member.id)}}" ng-repeat="member in members">
+        <img src="/img/placeholder-small.png" class="portrait portrait-small" alt="{{member.firstname}} {{member.surname}}" />
+        <a href="#/members/{{member.id}}">
+            <span class="fullname">{{member.firstName}}  {{member.surname}}</span>
+            <span class="details">{{member.gender}}, {{member.age}}</span>
+            <i class="icon-chevron-right"></i>
+        </a>
+    </li>
+</ul>

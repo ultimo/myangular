@@ -1,0 +1,114 @@
+@import "elements.less";
+
+@darkbg: #444;
+@hoverdarkbg: #555;
+@lightbg: #f5f5f5;
+@altbg: #fff;
+@lightfont: #eee;
+@selected: #047;
+
+body {
+    background-color: @darkbg;
+}
+
+a, a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1 {
+    .bg-gradient(0.2);
+    margin: 0;
+    padding: 15px 20px;
+    color: @lightfont;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 20px;
+    line-height: 1;
+}
+
+table{
+    a {
+        display: block;
+    }
+    .selected a {
+        color: lighten(@selected, 20%);
+    }
+
+}
+
+.dashboard {
+    padding: 0;
+}
+
+.members {
+    width: 20%;
+    float: left;
+    li {
+        padding: 5px 20px;
+        border-top: 1px solid #555;
+        border-bottom: 1px solid #333;
+        position: relative;
+        &:hover {
+            background-color: @hoverdarkbg;
+        }
+    }
+    .selected, .selected:hover {
+        background-color: @selected;
+    }
+    a {
+        color: @lightfont;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    i {
+        display: block;
+        .rounded(10px);
+        .inner-shadow();
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        width: 19px;
+        height: 19px;
+        background-position: -454px -70px;
+        background-color: @lightbg;
+    }
+    span {
+        display: block;
+    }
+    .details {
+        font-size: 12px;
+        color: #aaa;
+    }
+}
+
+.portrait-big {
+    width: 175px;
+    height: 200px;
+    float: left;
+    margin-right: 20px;
+}
+
+.portrait-small {
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-right: 20px;
+}
+
+.profile {
+    margin-left: 20%;
+    .well {
+        height: 100%
+    }
+}
+
+.well-alt {
+    background-color: @altbg;
+}

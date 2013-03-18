@@ -1,0 +1,104 @@
+body {
+  background-color: #444444;
+}
+a,
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+h1 {
+  background-color: #111111;
+  background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
+  background-image: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
+  background-image: -moz-linear-gradient(center bottom, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
+  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#000000', GradientType=0);
+  margin: 0;
+  padding: 15px 20px;
+  color: #eeeeee;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1;
+}
+h2 {
+  margin-top: 0;
+  font-size: 20px;
+  line-height: 1;
+}
+table a {
+  display: block;
+}
+table .selected a {
+  color: #007edd;
+}
+.dashboard {
+  padding: 0;
+}
+.members {
+  width: 20%;
+  float: left;
+}
+.members li {
+  padding: 5px 20px;
+  border-top: 1px solid #555;
+  border-bottom: 1px solid #333;
+  position: relative;
+}
+.members li:hover {
+  background-color: #555555;
+}
+.members .selected,
+.members .selected:hover {
+  background-color: #004477;
+}
+.members a {
+  color: #eeeeee;
+}
+.members a:hover {
+  text-decoration: none;
+}
+.members i {
+  display: block;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.4);
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  width: 19px;
+  height: 19px;
+  background-position: -454px -70px;
+  background-color: #f5f5f5;
+}
+.members span {
+  display: block;
+}
+.members .details {
+  font-size: 12px;
+  color: #aaa;
+}
+.portrait-big {
+  width: 175px;
+  height: 200px;
+  float: left;
+  margin-right: 20px;
+}
+.portrait-small {
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin-right: 20px;
+}
+.profile {
+  margin-left: 20%;
+}
+.profile .well {
+  height: 100%;
+}
+.well-alt {
+  background-color: #ffffff;
+}
